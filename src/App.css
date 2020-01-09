@@ -17,11 +17,17 @@
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
+  justify-content: space-around;  
+  /* flex-direction: row; 
+  flex-flow: column wrap; */
+  align-content: stretch;  
 }
 
 .App-link {
@@ -35,4 +41,128 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.fullWidth {
+  width: 100vw;
+  flex-flow: row wrap;
+}
+
+.userDetails {
+  margin: 2em;
+  padding: 2em;
+  width:18em;
+  height: 20em;
+  border: 1px solid yellow;
+  font-size: 10pt;
+  text-align: left;
+  position: relative;
+}
+
+.userDetails a {
+  color: yellow;
+}
+
+.userName {
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+  margin: 2px;
+  justify-content: space-between;
+}
+
+.userName span.middle {
+  position: absolute;
+  left: 45%;
+}
+.postTitle {
+  font-size: 18px;
+  margin: 2em;
+}
+.postBody {
+  font-size: 14px;
+  margin: 2em;
+}
+
+.userDetailsBtn {
+  position: absolute;
+  bottom: 3em;
+  width: 90%;
+  height: 5em;
+  left: 5%;
+}
+
+.userPosts {
+  margin: 2em;
+  padding: 2em;
+  height: 2em;
+  border: 1px solid yellow;
+  font-size: 10pt;
+  text-align: left;
+  position: relative;
+}
+
+.userPosts a {
+  color: white;
+  margin-left: 3em;
+  margin-top: 0.5em;
+}
+
+.userPosts .arrowRight {
+  color: white;
+  right: 3em;
+  position: absolute;
+}
+
+.goBackArrowBtn {
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+  margin-left: 2em;
+
+  position: relative;
+}
+
+.goBackArrowBtn span {
+  position: absolute;
+  top: 20%;
+  padding-left: 1em;
+}
+
+.addPostBtn {
+  margin-right: 2em;
+}
+
+.userPostsComments {
+  margin: 2em;
+  padding: 2em;
+  height: 2em;
+  border: 1px solid yellow;
+  font-size: 10pt;
+  text-align: left;
+  position: relative;
+}
+
+.userPostsComments span {
+  position: absolute;
+  right: 3em;
+}
+
+.userPostsComments span a {
+  color: white;
+  text-decoration: none;
 }
